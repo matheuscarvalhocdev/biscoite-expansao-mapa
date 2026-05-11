@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-b-dark: #00263B;
+  --color-b-primary: #6385B7;
+  --color-b-secondary: #A8C9E9;
+  --color-b-light: #E2F0FF;
+}
+
+body {
+  background-color: var(--color-b-dark);
+  color: var(--color-b-light);
+}
+
+/* Scrollbar personalizada para o tema Dark */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(99, 133, 183, 0.1);
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--color-b-primary);
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--color-b-secondary);
+}
